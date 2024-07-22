@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03A9D4DF-2433-47F0-A4B5-22F596E29443}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSI.GMES.PD</RootNamespace>
+    <AssemblyName>CSI.GMES.PD.MSPD90199A</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Export, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.UI, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="JPlatform.Client.BrowserControls6">
+      <HintPath>C:\JihooSoft\JBrowser6_GMES\JPlatform.Client.BrowserControls6.dll</HintPath>
+    </Reference>
+    <Reference Include="JPlatform.Client.ChildForm6">
+      <HintPath>C:\JihooSoft\JBrowser6_GMES\JPlatform.Client.ChildForm6.dll</HintPath>
+    </Reference>
+    <Reference Include="JPlatform.Client.Controls6">
+      <HintPath>C:\JihooSoft\JBrowser6_GMES\JPlatform.Client.Controls6.dll</HintPath>
+    </Reference>
+    <Reference Include="JPlatform.Client.CSIGMESBaseform6">
+      <HintPath>C:\JihooSoft\JBrowser6_GMES\JPlatform.Client.CSIGMESBaseform6.dll</HintPath>
+    </Reference>
+    <Reference Include="JPlatform.Client.JBaseForm6">
+      <HintPath>C:\JihooSoft\JBrowser6_GMES\JPlatform.Client.JBaseForm6.dll</HintPath>
+    </Reference>
+    <Reference Include="JPlatform.Client.JERPBaseForm6">
+      <HintPath>C:\JihooSoft\JBrowser6_GMES\JPlatform.Client.JERPBaseForm6.dll</HintPath>
+    </Reference>
+    <Reference Include="JPlatform.Client.Library6">
+      <HintPath>C:\JihooSoft\JBrowser6_GMES\JPlatform.Client.Library6.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassLib\Variant.cs" />
+    <Compile Include="MSPD90199A_Outgoing_Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSPD90199A_Outgoing_Register.designer.cs">
+      <DependentUpon>MSPD90199A_Outgoing_Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MSPD90199A_Incoming_Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSPD90199A_Incoming_Register.designer.cs">
+      <DependentUpon>MSPD90199A_Incoming_Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MSPD90199A_Request_Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSPD90199A_Request_Register.designer.cs">
+      <DependentUpon>MSPD90199A_Request_Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\RequestSave.cs" />
+    <Compile Include="Services\RequestSelect.cs" />
+    <Compile Include="Services\OutgoingSave.cs" />
+    <Compile Include="Services\IncomingSave.cs" />
+    <Compile Include="Services\StockSelect.cs" />
+    <Compile Include="Services\OutgoingSelect .cs" />
+    <Compile Include="Services\IncomingSelect.cs" />
+    <Compile Include="Services\PartListSave.cs" />
+    <Compile Include="Services\ComboSelect.cs" />
+    <Compile Include="Services\PartListSelect.cs" />
+    <Compile Include="ClassLib\Delegate.cs" />
+    <Compile Include="ClassLib\Format.cs" />
+    <Compile Include="ClassLib\Function.cs" />
+    <Compile Include="Helper\MyCellMergeHelper.cs" />
+    <Compile Include="Helper\MyGridPainter.cs" />
+    <Compile Include="Helper\MyMergedCell.cs" />
+    <Compile Include="MSPD90199A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSPD90199A.Designer.cs">
+      <DependentUpon>MSPD90199A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC\Stock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\Stock.Designer.cs">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\Outgoing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\Outgoing.Designer.cs">
+      <DependentUpon>Outgoing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\Incoming.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\Incoming.Designer.cs">
+      <DependentUpon>Incoming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\Request.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\Request.Designer.cs">
+      <DependentUpon>Request.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MSPD90199A_Outgoing_Register.resx">
+      <DependentUpon>MSPD90199A_Outgoing_Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MSPD90199A_Incoming_Register.resx">
+      <DependentUpon>MSPD90199A_Incoming_Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MSPD90199A.resx">
+      <DependentUpon>MSPD90199A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MSPD90199A_Request_Register.resx">
+      <DependentUpon>MSPD90199A_Request_Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\Stock.resx">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\Outgoing.resx">
+      <DependentUpon>Outgoing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\Incoming.resx">
+      <DependentUpon>Incoming.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\Request.resx">
+      <DependentUpon>Request.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
