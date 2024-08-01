@@ -469,6 +469,24 @@ namespace CSI.GMES.QM {
                 {
                     e.Appearance.BackColor = Color.LightYellow;
                 }
+
+                if(e.Column.AbsoluteIndex >= 4)
+                {
+                    if(gvwBase.GetRowCellValue(e.RowHandle, "DIV").ToString().ToUpper().Equals("SUMMARY"))
+                    {
+                        e.Appearance.BackColor = Color.FromArgb(215,237,213);
+                    }
+
+                    if (gvwBase.GetRowCellValue(e.RowHandle, "DIV").ToString().ToUpper().Equals("PLAN"))
+                    {
+                        e.Appearance.BackColor = Color.FromArgb(255, 219, 201);
+                    }
+
+                    if (gvwBase.GetRowCellValue(e.RowHandle, "DIV").ToString().ToUpper().Equals("CO LABEL"))
+                    {
+                        e.Appearance.BackColor = Color.FromArgb(237, 237, 237);
+                    }
+                }
             }
             catch
             {
