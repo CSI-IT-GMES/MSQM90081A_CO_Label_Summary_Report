@@ -235,8 +235,9 @@ namespace CSI.GMES.QM {
 
                     if (gridView.Columns[i].FieldName.ToString().Equals("MODEL_NAME"))
                     {
-                        gridView.Columns[i].Width = 300;
+                        gridView.Columns[i].Width = 150;
                         gridView.Columns[i].AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+                        gridView.Columns[i].ColumnEdit = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
                     }
                 }
 
@@ -389,7 +390,7 @@ namespace CSI.GMES.QM {
                         gridBand.Visible = true;
 
                         colBand = new BandedGridColumnEx() { FieldName = dtHead.Rows[iRow]["CS_SIZE"].ToString(), Visible = true };
-                        colBand.Width = 80;
+                        colBand.Width = 70;
                         gridBand.Columns.Add(colBand);
                     }
                 }
