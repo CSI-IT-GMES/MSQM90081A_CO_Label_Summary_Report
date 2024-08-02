@@ -47,6 +47,9 @@ namespace CSI.GMES.QM {
 
             InitCombobox();
 
+            lbUnit.Font = new Font("Calibri", 12, FontStyle.Italic);
+            lbUnit.ForeColor = Color.Blue;
+
             _firstLoad = false;
         }
 
@@ -230,6 +233,7 @@ namespace CSI.GMES.QM {
 
                     if (gridView.Columns[i].FieldName.ToString().Equals("DIV"))
                     {
+                        gridView.Columns[i].Width = 170;
                         gridView.Columns[i].AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
                     }
 
@@ -472,17 +476,17 @@ namespace CSI.GMES.QM {
 
                 if(e.Column.AbsoluteIndex >= 4)
                 {
-                    if(gvwBase.GetRowCellValue(e.RowHandle, "DIV").ToString().ToUpper().Equals("ACTUAL"))
+                    if(e.RowHandle == 2)
                     {
                         e.Appearance.BackColor = Color.FromArgb(215,237,213);
                     }
 
-                    if (gvwBase.GetRowCellValue(e.RowHandle, "DIV").ToString().ToUpper().Equals("PLAN"))
+                    if (e.RowHandle == 0)
                     {
                         e.Appearance.BackColor = Color.FromArgb(255, 219, 201);
                     }
 
-                    if (gvwBase.GetRowCellValue(e.RowHandle, "DIV").ToString().ToUpper().Equals("CO LABEL"))
+                    if (e.RowHandle == 1)
                     {
                         e.Appearance.BackColor = Color.FromArgb(206, 227, 242);
                     }

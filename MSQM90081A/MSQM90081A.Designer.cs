@@ -25,17 +25,6 @@
         private void InitializeComponent() {
             this.pnMain = new JPlatform.Client.Controls6.PanelEx();
             this.pnBody = new System.Windows.Forms.Panel();
-            this.panTop = new JPlatform.Client.Controls6.PanelEx();
-            this.labelEx3 = new JPlatform.Client.Controls6.LabelEx();
-            this.cboFactory = new JPlatform.Client.Controls6.LookUpEditEx();
-            this.cboPoItem = new JPlatform.Client.Controls6.LookUpEditEx();
-            this.labelEx4 = new JPlatform.Client.Controls6.LabelEx();
-            this.cboPoNo = new JPlatform.Client.Controls6.LookUpEditEx();
-            this.labelEx5 = new JPlatform.Client.Controls6.LabelEx();
-            this.gridViewEx1 = new JPlatform.Client.Controls6.GridViewEx();
-            this.gridViewEx2 = new JPlatform.Client.Controls6.GridViewEx();
-            this.gridViewEx3 = new JPlatform.Client.Controls6.GridViewEx();
-            this.gridViewEx4 = new JPlatform.Client.Controls6.GridViewEx();
             this.grdBase = new JPlatform.Client.Controls6.GridControlEx();
             this.gvwBase = new JPlatform.Client.Controls6.BandedGridViewEx();
             this.repositoryItemSpinEditEx17 = new JPlatform.Client.Controls6.RepositoryItemSpinEditEx();
@@ -47,21 +36,24 @@
             this.repositoryItemDateEditEx15 = new JPlatform.Client.Controls6.RepositoryItemDateEditEx();
             this.repositoryItemCheckEditEx5 = new JPlatform.Client.Controls6.RepositoryItemCheckEditEx();
             this.gridViewEx5 = new JPlatform.Client.Controls6.GridViewEx();
+            this.panTop = new JPlatform.Client.Controls6.PanelEx();
+            this.labelEx3 = new JPlatform.Client.Controls6.LabelEx();
+            this.cboFactory = new JPlatform.Client.Controls6.LookUpEditEx();
+            this.cboPoItem = new JPlatform.Client.Controls6.LookUpEditEx();
+            this.labelEx4 = new JPlatform.Client.Controls6.LabelEx();
+            this.cboPoNo = new JPlatform.Client.Controls6.LookUpEditEx();
+            this.labelEx5 = new JPlatform.Client.Controls6.LabelEx();
+            this.gridViewEx1 = new JPlatform.Client.Controls6.GridViewEx();
+            this.gridViewEx2 = new JPlatform.Client.Controls6.GridViewEx();
+            this.gridViewEx3 = new JPlatform.Client.Controls6.GridViewEx();
+            this.gridViewEx4 = new JPlatform.Client.Controls6.GridViewEx();
+            this.lbUnit = new JPlatform.Client.Controls6.LabelEx();
             ((System.ComponentModel.ISupportInitialize)(this.FormMessages)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FoemComboInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BaseTextEditEx.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnMain)).BeginInit();
             this.pnMain.SuspendLayout();
             this.pnBody.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panTop)).BeginInit();
-            this.panTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cboFactory.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboPoItem.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboPoNo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewEx1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewEx2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewEx3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewEx4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvwBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEditEx17)).BeginInit();
@@ -76,6 +68,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditEx15.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEditEx5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewEx5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panTop)).BeginInit();
+            this.panTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cboFactory.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboPoItem.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboPoNo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewEx1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewEx2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewEx3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewEx4)).BeginInit();
             this.SuspendLayout();
             // 
             // BaseTextEditEx
@@ -102,133 +103,6 @@
             this.pnBody.Name = "pnBody";
             this.pnBody.Size = new System.Drawing.Size(1242, 580);
             this.pnBody.TabIndex = 26;
-            // 
-            // panTop
-            // 
-            this.panTop.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panTop.Appearance.Options.UseFont = true;
-            this.panTop.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.panTop.Controls.Add(this.labelEx3);
-            this.panTop.Controls.Add(this.cboFactory);
-            this.panTop.Controls.Add(this.cboPoItem);
-            this.panTop.Controls.Add(this.labelEx4);
-            this.panTop.Controls.Add(this.cboPoNo);
-            this.panTop.Controls.Add(this.labelEx5);
-            this.panTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panTop.Location = new System.Drawing.Point(2, 2);
-            this.panTop.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.panTop.Name = "panTop";
-            this.panTop.Size = new System.Drawing.Size(1242, 50);
-            this.panTop.TabIndex = 25;
-            // 
-            // labelEx3
-            // 
-            this.labelEx3.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEx3.Appearance.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelEx3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelEx3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelEx3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelEx3.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
-            this.labelEx3.Location = new System.Drawing.Point(10, 13);
-            this.labelEx3.Name = "labelEx3";
-            this.labelEx3.Size = new System.Drawing.Size(56, 25);
-            this.labelEx3.TabIndex = 506;
-            this.labelEx3.Text = "Factory";
-            // 
-            // cboFactory
-            // 
-            this.cboFactory.ControlValue = null;
-            this.cboFactory.Enabled = false;
-            this.cboFactory.Location = new System.Drawing.Point(73, 13);
-            this.cboFactory.Name = "cboFactory";
-            this.cboFactory.Properties.Appearance.BackColor = System.Drawing.Color.MistyRose;
-            this.cboFactory.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboFactory.Properties.Appearance.Options.UseBackColor = true;
-            this.cboFactory.Properties.Appearance.Options.UseFont = true;
-            this.cboFactory.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cboFactory.Properties.NullText = "";
-            this.cboFactory.Size = new System.Drawing.Size(130, 25);
-            this.cboFactory.TabIndex = 508;
-            // 
-            // cboPoItem
-            // 
-            this.cboPoItem.ControlValue = null;
-            this.cboPoItem.Location = new System.Drawing.Point(483, 13);
-            this.cboPoItem.Name = "cboPoItem";
-            this.cboPoItem.Properties.Appearance.BackColor = System.Drawing.Color.MistyRose;
-            this.cboPoItem.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboPoItem.Properties.Appearance.Options.UseBackColor = true;
-            this.cboPoItem.Properties.Appearance.Options.UseFont = true;
-            this.cboPoItem.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cboPoItem.Properties.NullText = "";
-            this.cboPoItem.Size = new System.Drawing.Size(130, 25);
-            this.cboPoItem.TabIndex = 501;
-            // 
-            // labelEx4
-            // 
-            this.labelEx4.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEx4.Appearance.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelEx4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelEx4.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelEx4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelEx4.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
-            this.labelEx4.Location = new System.Drawing.Point(410, 13);
-            this.labelEx4.Name = "labelEx4";
-            this.labelEx4.Size = new System.Drawing.Size(67, 25);
-            this.labelEx4.TabIndex = 497;
-            this.labelEx4.Text = "PO Item";
-            // 
-            // cboPoNo
-            // 
-            this.cboPoNo.ControlValue = null;
-            this.cboPoNo.Location = new System.Drawing.Point(274, 13);
-            this.cboPoNo.Name = "cboPoNo";
-            this.cboPoNo.Properties.Appearance.BackColor = System.Drawing.Color.MistyRose;
-            this.cboPoNo.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboPoNo.Properties.Appearance.Options.UseBackColor = true;
-            this.cboPoNo.Properties.Appearance.Options.UseFont = true;
-            this.cboPoNo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cboPoNo.Properties.NullText = "";
-            this.cboPoNo.Size = new System.Drawing.Size(130, 25);
-            this.cboPoNo.TabIndex = 511;
-            this.cboPoNo.Closed += new DevExpress.XtraEditors.Controls.ClosedEventHandler(this.cboPoNo_Closed);
-            // 
-            // labelEx5
-            // 
-            this.labelEx5.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEx5.Appearance.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelEx5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelEx5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelEx5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelEx5.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
-            this.labelEx5.Location = new System.Drawing.Point(213, 13);
-            this.labelEx5.Name = "labelEx5";
-            this.labelEx5.Size = new System.Drawing.Size(55, 25);
-            this.labelEx5.TabIndex = 510;
-            this.labelEx5.Text = "PO No.";
-            // 
-            // gridViewEx1
-            // 
-            this.gridViewEx1.ActionMode = JPlatform.Client.Controls6.ActionMode.View;
-            this.gridViewEx1.Name = "gridViewEx1";
-            // 
-            // gridViewEx2
-            // 
-            this.gridViewEx2.ActionMode = JPlatform.Client.Controls6.ActionMode.View;
-            this.gridViewEx2.Name = "gridViewEx2";
-            // 
-            // gridViewEx3
-            // 
-            this.gridViewEx3.ActionMode = JPlatform.Client.Controls6.ActionMode.View;
-            this.gridViewEx3.Name = "gridViewEx3";
-            // 
-            // gridViewEx4
-            // 
-            this.gridViewEx4.ActionMode = JPlatform.Client.Controls6.ActionMode.View;
-            this.gridViewEx4.Name = "gridViewEx4";
             // 
             // grdBase
             // 
@@ -379,6 +253,150 @@
             this.gridViewEx5.GridControl = this.grdBase;
             this.gridViewEx5.Name = "gridViewEx5";
             // 
+            // panTop
+            // 
+            this.panTop.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panTop.Appearance.Options.UseFont = true;
+            this.panTop.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.panTop.Controls.Add(this.lbUnit);
+            this.panTop.Controls.Add(this.labelEx3);
+            this.panTop.Controls.Add(this.cboFactory);
+            this.panTop.Controls.Add(this.cboPoItem);
+            this.panTop.Controls.Add(this.labelEx4);
+            this.panTop.Controls.Add(this.cboPoNo);
+            this.panTop.Controls.Add(this.labelEx5);
+            this.panTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panTop.Location = new System.Drawing.Point(2, 2);
+            this.panTop.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panTop.Name = "panTop";
+            this.panTop.Size = new System.Drawing.Size(1242, 50);
+            this.panTop.TabIndex = 25;
+            // 
+            // labelEx3
+            // 
+            this.labelEx3.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEx3.Appearance.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelEx3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelEx3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.labelEx3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelEx3.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
+            this.labelEx3.Location = new System.Drawing.Point(10, 13);
+            this.labelEx3.Name = "labelEx3";
+            this.labelEx3.Size = new System.Drawing.Size(56, 25);
+            this.labelEx3.TabIndex = 506;
+            this.labelEx3.Text = "Factory";
+            // 
+            // cboFactory
+            // 
+            this.cboFactory.ControlValue = null;
+            this.cboFactory.Enabled = false;
+            this.cboFactory.Location = new System.Drawing.Point(73, 13);
+            this.cboFactory.Name = "cboFactory";
+            this.cboFactory.Properties.Appearance.BackColor = System.Drawing.Color.MistyRose;
+            this.cboFactory.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboFactory.Properties.Appearance.Options.UseBackColor = true;
+            this.cboFactory.Properties.Appearance.Options.UseFont = true;
+            this.cboFactory.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboFactory.Properties.NullText = "";
+            this.cboFactory.Size = new System.Drawing.Size(130, 25);
+            this.cboFactory.TabIndex = 508;
+            // 
+            // cboPoItem
+            // 
+            this.cboPoItem.ControlValue = null;
+            this.cboPoItem.Location = new System.Drawing.Point(483, 13);
+            this.cboPoItem.Name = "cboPoItem";
+            this.cboPoItem.Properties.Appearance.BackColor = System.Drawing.Color.MistyRose;
+            this.cboPoItem.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboPoItem.Properties.Appearance.Options.UseBackColor = true;
+            this.cboPoItem.Properties.Appearance.Options.UseFont = true;
+            this.cboPoItem.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboPoItem.Properties.NullText = "";
+            this.cboPoItem.Size = new System.Drawing.Size(130, 25);
+            this.cboPoItem.TabIndex = 501;
+            // 
+            // labelEx4
+            // 
+            this.labelEx4.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEx4.Appearance.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelEx4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelEx4.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.labelEx4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelEx4.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
+            this.labelEx4.Location = new System.Drawing.Point(410, 13);
+            this.labelEx4.Name = "labelEx4";
+            this.labelEx4.Size = new System.Drawing.Size(67, 25);
+            this.labelEx4.TabIndex = 497;
+            this.labelEx4.Text = "PO Item";
+            // 
+            // cboPoNo
+            // 
+            this.cboPoNo.ControlValue = null;
+            this.cboPoNo.Location = new System.Drawing.Point(274, 13);
+            this.cboPoNo.Name = "cboPoNo";
+            this.cboPoNo.Properties.Appearance.BackColor = System.Drawing.Color.MistyRose;
+            this.cboPoNo.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboPoNo.Properties.Appearance.Options.UseBackColor = true;
+            this.cboPoNo.Properties.Appearance.Options.UseFont = true;
+            this.cboPoNo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboPoNo.Properties.NullText = "";
+            this.cboPoNo.Size = new System.Drawing.Size(130, 25);
+            this.cboPoNo.TabIndex = 511;
+            this.cboPoNo.Closed += new DevExpress.XtraEditors.Controls.ClosedEventHandler(this.cboPoNo_Closed);
+            // 
+            // labelEx5
+            // 
+            this.labelEx5.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEx5.Appearance.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelEx5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelEx5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.labelEx5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelEx5.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
+            this.labelEx5.Location = new System.Drawing.Point(213, 13);
+            this.labelEx5.Name = "labelEx5";
+            this.labelEx5.Size = new System.Drawing.Size(55, 25);
+            this.labelEx5.TabIndex = 510;
+            this.labelEx5.Text = "PO No.";
+            // 
+            // gridViewEx1
+            // 
+            this.gridViewEx1.ActionMode = JPlatform.Client.Controls6.ActionMode.View;
+            this.gridViewEx1.Name = "gridViewEx1";
+            // 
+            // gridViewEx2
+            // 
+            this.gridViewEx2.ActionMode = JPlatform.Client.Controls6.ActionMode.View;
+            this.gridViewEx2.Name = "gridViewEx2";
+            // 
+            // gridViewEx3
+            // 
+            this.gridViewEx3.ActionMode = JPlatform.Client.Controls6.ActionMode.View;
+            this.gridViewEx3.Name = "gridViewEx3";
+            // 
+            // gridViewEx4
+            // 
+            this.gridViewEx4.ActionMode = JPlatform.Client.Controls6.ActionMode.View;
+            this.gridViewEx4.Name = "gridViewEx4";
+            // 
+            // lbUnit
+            // 
+            this.lbUnit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbUnit.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUnit.Appearance.ForeColor = System.Drawing.Color.Blue;
+            this.lbUnit.Appearance.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbUnit.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.lbUnit.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lbUnit.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.lbUnit.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
+            this.lbUnit.Location = new System.Drawing.Point(1115, 13);
+            this.lbUnit.Name = "lbUnit";
+            this.lbUnit.Size = new System.Drawing.Size(115, 25);
+            this.lbUnit.TabIndex = 512;
+            this.lbUnit.Text = "Unit: Pairs";
+            // 
             // MSQM90081A
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -396,15 +414,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pnMain)).EndInit();
             this.pnMain.ResumeLayout(false);
             this.pnBody.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panTop)).EndInit();
-            this.panTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.cboFactory.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboPoItem.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboPoNo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewEx1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewEx2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewEx3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewEx4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdBase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvwBase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEditEx17)).EndInit();
@@ -419,6 +428,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEditEx15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEditEx5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewEx5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panTop)).EndInit();
+            this.panTop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cboFactory.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboPoItem.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboPoNo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewEx1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewEx2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewEx3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewEx4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -448,6 +466,7 @@
         private JPlatform.Client.Controls6.RepositoryItemDateEditEx repositoryItemDateEditEx15;
         private JPlatform.Client.Controls6.RepositoryItemCheckEditEx repositoryItemCheckEditEx5;
         private JPlatform.Client.Controls6.GridViewEx gridViewEx5;
+        private JPlatform.Client.Controls6.LabelEx lbUnit;
     }
 }
 
