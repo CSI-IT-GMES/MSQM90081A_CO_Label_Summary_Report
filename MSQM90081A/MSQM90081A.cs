@@ -467,12 +467,12 @@ namespace CSI.GMES.QM {
 
                 if (e.Column.FieldName.ToString().Equals("DIV"))
                 {
-                    e.Appearance.BackColor = Color.LightYellow;
+                    e.Appearance.BackColor = Color.FromArgb(237, 237, 237);
                 }
 
                 if(e.Column.AbsoluteIndex >= 4)
                 {
-                    if(gvwBase.GetRowCellValue(e.RowHandle, "DIV").ToString().ToUpper().Equals("SUMMARY"))
+                    if(gvwBase.GetRowCellValue(e.RowHandle, "DIV").ToString().ToUpper().Equals("ACTUAL"))
                     {
                         e.Appearance.BackColor = Color.FromArgb(215,237,213);
                     }
@@ -484,8 +484,13 @@ namespace CSI.GMES.QM {
 
                     if (gvwBase.GetRowCellValue(e.RowHandle, "DIV").ToString().ToUpper().Equals("CO LABEL"))
                     {
-                        e.Appearance.BackColor = Color.FromArgb(237, 237, 237);
+                        e.Appearance.BackColor = Color.FromArgb(206, 227, 242);
                     }
+                }
+
+                if (e.Column.FieldName.ToString().ToUpper().Equals("TOTAL"))
+                {
+                    e.Appearance.BackColor = Color.LightYellow;
                 }
             }
             catch
