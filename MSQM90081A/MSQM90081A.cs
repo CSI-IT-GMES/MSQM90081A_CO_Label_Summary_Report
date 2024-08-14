@@ -47,6 +47,7 @@ namespace CSI.GMES.QM {
 
             InitCombobox();
 
+            txtStyleName.BackColor = Color.FromArgb(255, 228, 225);
             lbUnit.Font = new Font("Calibri", 12, FontStyle.Italic);
             lbUnit.ForeColor = Color.Blue;
 
@@ -143,7 +144,15 @@ namespace CSI.GMES.QM {
                 string _po_no = string.IsNullOrEmpty(cboPoNo.EditValue.ToString()) ? "" : cboPoNo.EditValue.ToString();
                 string _po_item = string.IsNullOrEmpty(cboPoItem.EditValue.ToString()) ? "" : cboPoItem.EditValue.ToString();
 
-                dtData = proc.SetParamData(dtData, _type, _factory, _po_no, _po_item);
+                if (_type.Equals("Q_PO"))
+                {
+                    dtData = proc.SetParamData(dtData, _type, _factory, _search, "");
+                }
+                else
+                {
+                    dtData = proc.SetParamData(dtData, _type, _factory, _po_no, _po_item);
+                }
+
                 ResultSet rs = CommonCallQuery(dtData, proc.ProcName, proc.GetParamInfo(), false, 90000, "", true);
 
                 if (rs == null || rs.ResultDataSet == null || rs.ResultDataSet.Tables.Count == 0 || rs.ResultDataSet.Tables[0].Rows.Count == 0)
@@ -500,6 +509,18 @@ namespace CSI.GMES.QM {
             catch
             {
 
+            }
+        }
+
+        private void txtStyleName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                if (txtStyleName.Text != null)
+                {
+                    LoadDataCbo(cboPoNo, "PO Number", "Q_PO", txtStyleName.Text.ToString().Trim());
+                }
+                txtStyleName.Text = "";
             }
         }
 
