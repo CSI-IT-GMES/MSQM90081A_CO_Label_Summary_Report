@@ -519,6 +519,7 @@ namespace CSI.GMES.QM {
                 if (txtStyleName.Text != null)
                 {
                     LoadDataCbo(cboPoNo, "PO Number", "Q_PO", txtStyleName.Text.ToString().Trim());
+                    LoadDataCbo(cboPoItem, "PO Item", "Q_PO_ITEM");
                 }
                 txtStyleName.Text = "";
             }
